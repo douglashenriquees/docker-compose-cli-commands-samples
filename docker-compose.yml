@@ -1,0 +1,22 @@
+version: '3.8'
+
+volumes:
+  volume-mysql:
+
+
+networks:
+  frontend:
+  backend:
+
+
+services:
+  mysql:
+    image: mysql:5.7
+    platform: linux/x86_64
+    volumes:
+      - volume-mysql:/var/lib/mysql
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=strongpass
+      - bind-address=0.0.0.0
