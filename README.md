@@ -15,4 +15,4 @@
   * **Volume** ```docker-compose-cli-commands-samples_volume-mysql```
   * **Rede** ```docker-compose-cli-commands-samples_backend```
   * **Container** ```docker-compose-cli-commands-samples_mysql_1```
-    * o sufixo com a numeração no caso do container, é dada automaticamente pelo **docker-compose**
+    * o sufixo com a numeração, no caso do container, é definido automaticamente pelo **docker-compose**
